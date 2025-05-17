@@ -1,56 +1,10 @@
 'use client'
 
+import { celulas } from '@/data/site-data'
 import { motion } from 'framer-motion'
 import { CalendarDays, Clock, MapPinCheck } from 'lucide-react'
+import { services } from '@/data/site-data'
 
-const services = [
-  {
-    title: 'Culto de Adoração',
-    day: 'Domingo',
-    time: '18h30',
-  },
-  {
-    title: 'Escola de Estudo Bíblico',
-    day: 'Domingo',
-    time: '08h40',
-  },
-  {
-    title: 'Encontro de Jovens',
-    day: 'Sábado',
-    time: '19h',
-  },
-]
-
-const celulas = [
-  {
-    title: 'Célula Jardim Canada',
-    lider:"Beto e Lorraine",
-    day: 'Terça-feira',
-    time: '19h30',
-    local:"Rua Deolinda Ceribelle de Carvalho - n°447, Jardim Canada, São Jm da Barra - SP",
-  },
-  {
-    title: 'Célula Vila Deieno',
-    lider:"Kaike e Beatriz",
-    day: 'Terça-feira',
-    time: '19h30',
-    local:"Rua Fernão Dias - n°91, Vila Deieno, São Jm da Barra - SP",
-  },
-  {
-    title: 'Célula Baixada',
-    lider:"Felipe e Daniella",
-    day: 'Quarta-feira',
-    time: '19h30',
-    local:"Rua Tiradentes - n°220, Baixada, São Jm da Barra - SP",
-  },
-  {
-    title: 'Célula Morada do Sol',
-    lider:"Jéssica e Pastores",
-    day: 'Quarta-feira',
-    time: '19h30',
-    local:"Rua Ana Tomazini Teixeira - n°501, Morada do Sol, São Jm da Barra - SP",
-  }
-]
 
 export default function ServicesSection() {
   return (

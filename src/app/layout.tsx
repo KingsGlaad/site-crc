@@ -16,9 +16,25 @@ const rubikFont = Rubik({
 
 export const metadata: Metadata = {
   title: "Seja Bem Vindo a Cristo Reina Church",
-  icons:{
-    icon: "/logo.png",
-  }
+  icons: [
+    {
+      rel: "icon",
+      url: "/logo-preto.png",
+      media: "(prefers-color-scheme: light)",
+      type: "image/png",
+    },
+    {
+      rel: "icon",
+      url: "/logo.png",
+      media: "(prefers-color-scheme: dark)",
+      type: "image/png",
+    },
+    {
+      rel: "icon",
+      url: "/logo.png",
+      type: "image/x-icon",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -27,11 +43,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="pt-Br" suppressHydrationWarning>
       <body
         className={`${rubikFont.variable} antialiased`}
       >
-       <ThemeProvider attribute="class" defaultTheme="dark" enableSystem >
+       <ThemeProvider attribute="class" defaultTheme="system" enableSystem >
         <Header/>
         {children}
         <Toaster/>

@@ -1,35 +1,36 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { Menu } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import Link from "next/link";
+import { Menu } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import {
   Drawer,
   DrawerContent,
   DrawerTrigger,
   DrawerClose,
-} from '@/components/ui/drawer'
-import { useState } from 'react'
-import Image from 'next/image'
+} from "@/components/ui/drawer";
+import { useState } from "react";
+import Image from "next/image";
 
 const navItems = [
-  { label: 'Início', href: '/' },
-  { label: 'Quem Somos', href: '#about' },
-  { label: 'Cultos', href: '#services' },
-  { label: 'Localização', href: '#location' },
-  { label: 'Contato', href: '#contact' },
-]
+  { label: "Início", href: "/" },
+  { label: "Quem Somos", href: "#about" },
+  { label: "Cultos", href: "#services" },
+  { label: "Localização", href: "#location" },
+  { label: "Contato", href: "#contact" },
+  { label: "Relatório", href: "/relatorio" },
+];
 
 export default function Header() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-80 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-4">
-          <Image src="/logo.png" alt="Logo" width={50} height={50} />
+          <Image src="/logo.png" alt="Logo" width={20} height={20} />
           <Link href="/" className="text-2xl font-bold text-primary">
-          Cristo Reina Church
+            Cristo Reina Church
           </Link>
         </div>
 
@@ -76,5 +77,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
