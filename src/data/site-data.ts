@@ -15,22 +15,22 @@ export const carouselData = [
     description: 'Cremos no mover do Espírito Santo, que guia, consola e capacita cada filho de Deus.'
   },
   {
-    src: '/images/carousel/c4.jpg',
+    src: '/images/carousel/c12.jpg',
     title: 'Amor como base',
     description: 'Vivemos o amor como centro de tudo o que fazemos — em cada ministério, palavra e atitude.'
   },
   {
-    src: '/images/carousel/c5.jpg',
+    src: '/images/carousel/c16.jpg',
     title: 'Crescimento espiritual',
     description: 'Nossa missão é ser um lugar onde todos possam crescer na fé e conhecer mais de Deus.'
   },
   {
-    src: '/images/carousel/c6.jpg',
+    src: '/images/carousel/c5.jpg',
     title: 'Serviço ao próximo',
     description: 'Servir é parte do nosso DNA — acreditamos que servir ao próximo é servir a Cristo.'
   },
   {
-    src: '/images/carousel/c7.jpg',
+    src: '/images/carousel/c11.jpg',
     title: 'Viver o Reino',
     description: 'Queremos viver e manifestar o Reino de Deus aqui na terra, em nossas famílias, igrejas e comunidades.'
   }
