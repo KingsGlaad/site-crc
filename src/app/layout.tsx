@@ -16,6 +16,9 @@ const rubikFont = Rubik({
 
 export const metadata: Metadata = {
   title: "Seja Bem Vindo a Cristo Reina Church",
+  icons:{
+    icon: "/logo.png",
+  }
 };
 
 export default function RootLayout({
