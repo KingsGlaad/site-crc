@@ -47,7 +47,7 @@ export default function RootLayout({
       <body
         className={`${rubikFont.variable} antialiased`}
       >
-       <ThemeProvider attribute="class" defaultTheme="system" enableSystem >
+       <ThemeProvider attribute="class" defaultTheme="dark" enableSystem >
         <Header/>
         {children}
         <Toaster/>
