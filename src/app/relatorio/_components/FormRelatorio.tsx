@@ -85,7 +85,7 @@ export default function FormRelatorio() {
         onSubmit={handleSubmit(onSubmit)}
         className="space-y-4 max-w-3xl mx-auto p-6"
       >
-        <h1 className="text-2xl  text-center">Relatório de Reunião</h1>
+        <h1 className="text-2xl  text-center">Relatório de Célula</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
@@ -112,7 +112,7 @@ export default function FormRelatorio() {
 
           <div className="flex gap-4">
             <div className="flex-1">
-              <label className="">Quantidade de Pessoas</label>
+              <label className="">N° Pessoas</label>
               <input
                 type="number"
                 {...register("quantidade")}
